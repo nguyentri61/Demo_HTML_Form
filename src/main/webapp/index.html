@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Input Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>My CV</h1>
+
+        <h2>Fill out your information here:</h2>
+
+        <form action="informationList" method="post">
+            <input type="hidden"  name="action" value="add">
+
+            <label>First Name</label>
+            <input type="text" name="firstName" required><br>
+
+            <label>Last Name</label>
+            <input type="text" name="lastName" required><br>
+
+            <label>Email</label>
+            <input type="email" name="email" required><br>
+
+            <label>Date of Birth</label>
+            <input type="date" name="date" required>
+
+            <h2>What year are you in college?</h2>
+            <input type="radio" name="optionMedia" value="1st"> 1st <br>
+            <input type="radio" name="optionMedia" value="2nd"> 2nd <br>
+            <input type="radio" name="optionMedia" value="3rd"> 3rd <br>
+            <input type="radio" name="optionMedia" value="4th"> 4th
+
+            <h2>What position are you applying for?</h2>
+            <input style="margin-left: 0" type="checkbox" name="confirm" value="BA"> BA
+            <input type="checkbox" name="confirm" value="Dev"> Dev
+            <input type="checkbox" name="confirm" value="Tester"> Tester
+            <input type="checkbox" name="confirm" value="PM"> PM <br>
+
+            <label style="font-weight: normal; width: auto"> Choose contact method:</label>
+            <select name="contact">
+                <option value="EmailOrPostal"> Email or postal mail </option>
+                <option value="Email"> Email</option>
+                <option value="Postal"> Postal mail </option>
+            </select> <br>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+
+</body>
+</html>
